@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/chancih0323/sublime/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/
+	jquery/3.5.1/jquery.min.js"></script>
+	<style type="text/css">
+		p{
+			color:pink;
+			margin: 5px;
+			cursor:pointer;
+		}
+		p:hover{
+			background:blue;
+		}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+		.husky{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			background: rgba(50,0,0,0.3);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 
-### Markdown
+</style>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+</head>
+<body>
+	<p>產品介紹</p>
+	<h1>智慧型客語機器人</h1>
+	<div class="husky">
+		<img src="1.JPG">
+	</div>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chancih0323/sublime/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+	<script type='text/javascript'>
+		$('p').click(function(){
+			$('.husky').slideToggle();
+		});
+		$('img').click(function(){
+			$('.husky').slideToggle();
+		});
+	</script>
+</body>
+</html>
